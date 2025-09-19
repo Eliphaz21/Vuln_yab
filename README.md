@@ -1,6 +1,6 @@
 # Vuln_yab - Python-Based Vulnerability Scanner
 
-Welcome to **VulnHawk** — a powerful and educational open-source vulnerability scanner built in Python.
+Welcome to **Vulnyab** — a powerful and educational open-source vulnerability scanner built in Python.
 
 This repository includes **two versions** of the scanner:
 
