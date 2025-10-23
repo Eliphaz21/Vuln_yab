@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="layout">
+  <aside class="sidebar">
+    <h2>Files</h2>
+    <nav>
+      {{ render_tree(tree, focus_path)|safe }}
+    </nav>
+  </aside>
+  <section class="content">
+    <div class="empty">
+      <p>Select a document from the sidebar to view it.</p>
+    </div>
+  </section>
+</div>
+{% endblock %}
