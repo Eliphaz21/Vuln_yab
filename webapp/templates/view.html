@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="layout">
+  <aside class="sidebar">
+    <h2>Files</h2>
+    <nav>
+      {{ render_tree(tree, relpath)|safe }}
+    </nav>
+  </aside>
+  <section class="content">
+    <article class="doc">
+      <h1>{{ title }}</h1>
+      <div class="doc-body markdown-body">{{ content }}</div>
+    </article>
+  </section>
+</div>
+{% endblock %}

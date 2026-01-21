@@ -1,0 +1,20 @@
+{% macro render_tree(node, active_path) %}
+  {% if node.type == 'dir' %}
+    <ul>
+      {% for name, child in (node.children or {}).items() %}
+        <li>
+          {% if child.type == 'dir' %}
+            <details {% if active_path and active_path.startswith(child.path) %}open{% endif %}>
+              <summary>{{ child.name }}</summary>
+              {{ render_tree(child, active_path) }}
+            </details>
+          {% else %}
+            <a href="{{ url_for('view_file', relpath=child.path) }}" class="{% if active_path == child.path %}active{% endif %}">{{ child.name }}</a>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <a href="{{ url_for('view_file', relpath=node.path) }}" class="{% if active_path == node.path %}active{% endif %}">{{ node.name }}</a>
+  {% endif %}
+{% endmacro %}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ title or 'Documentation' }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="{{ url_for('index') }}">📚 Repo Docs</a>
+        <form class="search" action="{{ url_for('search') }}" method="get">
+          <input type="search" name="q" value="{{ request.args.get('q','') }}" placeholder="Search docs…" />
+          <button type="submit">Search</button>
+        </form>
+        <div class="meta">{{ total_docs }} files</div>
+      </div>
+    </header>
+
+    <main class="container">
+      {% from 'macros.html' import render_tree %}
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>Docs root: <code>{{ docs_root }}</code></small>
+      </div>
+    </footer>
+  </body>
+</html>
