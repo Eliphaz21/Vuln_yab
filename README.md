@@ -9,7 +9,7 @@ This repository includes **two versions** of the scanner:
 
 ---
 
-## 🔍 Table of Contents
+##  Table of Contents
 
 * [Project Overview](#project-overview)
 * [Basic Scanner](#basic-scanner)
@@ -87,14 +87,14 @@ This tool suits intermediate to advanced users and demonstrates real-world vulne
 ### Features
 
 * 🛠 Service & version detection via Nmap
-* 🧠 Automatic CVE lookup (via Vulners API)
-* 📝 Generates PDF reports with:
+*  Automatic CVE lookup (via Vulners API)
+*  Generates PDF reports with:
 
   * Scan summary
   * Detected services & vulnerabilities
   * OS info, uptime, and traceroute
   * CVSS-based risk scoring with color-coded severity
-* 📊 Output in both terminal and PDF format
+*  Output in both terminal and PDF format
 
 ### Setup & Requirements
 
@@ -194,13 +194,13 @@ This project is licensed under the **MIT License** — see the [LICENSE](https:/
 Built and maintained by [yeabsra andinet] 
 [GitHub](https://github.com/Eliphaz21) |
 
-If you find this project useful, please ⭐ the repository and share it with others.
+If you find this project useful, please  the repository and share it with others.
 
 ---
 
 ## Happy Scanning
 
 **Just a developer who loves breaking and fixing stuff**.  
-— yeabsra andinet 💻🔐
+— yeabsra andinet 
 
 
