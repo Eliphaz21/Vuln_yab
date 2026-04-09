@@ -181,11 +181,6 @@ Make sure your code is tested and well-documented before submitting.
 Got a bug, feature request, or improvement idea?
 👉 Open an issue or start a discussion on [GitHub Issues](https://github.com/Eliphaz21)
 
----
-
-## License
-
-This project is licensed under the **MIT License** — see the [LICENSE](https://github.com/Eliphaz21) file for details.
 
 ---
 
