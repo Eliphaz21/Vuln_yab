@@ -175,15 +175,6 @@ All contributions are welcome! You can:
 
 Make sure your code is tested and well-documented before submitting.
 
----
-
-## Feedback
-Got a bug, feature request, or improvement idea?
-👉 Open an issue or start a discussion on [GitHub Issues](https://github.com/Eliphaz21)
-
-
----
-
 ## Author
 
 Built and maintained by [yeabsra andinet] 
